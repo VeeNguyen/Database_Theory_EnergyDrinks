@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Database Interface System{% endblock %}
+
+{% block page_content %}
+
+<div class="page-header">
+    <h1>Database Tables</h1>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Table</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for table in data %}
+        <tr>
+            <td> {{ table[0] }} </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+	<thead>
+		<tr>
+			<th>Table</th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for table in data %}
+			<tr>
+				<td> {{ table[0] }} </td>
+			</tr>
+		{% endfor %}
+	</tbody>
+</table>
+		
+{% endblock %}

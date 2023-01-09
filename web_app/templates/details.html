@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Database Interface System{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>Database Interface System</h1>
+</div>
+<div>
+	<a href="{{ url_for('tables') }}" class='btn btn-primary'>Get all tables</a>
+</div>
+{% endblock %}
